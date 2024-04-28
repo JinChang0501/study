@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="input1">請輸入文字</label>
+        <input type="text" id="inputa" name="inputa">
+        <button type="submit" id="btn">轉換</button>
+    </form>
+    <p id="output"></p>
+    <script>
+
+        let a = document.getElementById("inputa");
+        let b = document.getElementById("output");
+
+        btn.addEventListener('click', function (event) {
+            event.preventDefault();
+            let a = inputa.value;
+            let bvalue = a.split('').reverse().join('');
+            b.innerText = bvalue;
+        });
+
+    </script>
+</body>
+
+</html>
